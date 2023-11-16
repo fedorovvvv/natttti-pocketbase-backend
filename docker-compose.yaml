@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  pocketbase:
+    container_name: pocketbase
+    build: .
+    image: pocketbase:latest
+    volumes:
+      - natttti-pocketbase:/app/data
+    ports:
+      - "8090:8090"
+
+volumes:
+  natttti-pocketbase:
+    name: natttti-pocketbase
