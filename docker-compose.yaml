@@ -6,10 +6,10 @@ services:
     build: .
     image: natttti-pocketbase:latest
     volumes:
-      - natttti-pocketbase-valume:/app/data
+      - natttti-pocketbase-volume:/app/data
     ports:
       - "8090:8090"
 
 volumes:
-  natttti-pocketbase-valume:
-    name: natttti-pocketbase-valume
+  natttti-pocketbase-volume:
+    name: natttti-pocketbase-volume
