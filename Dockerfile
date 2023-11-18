@@ -17,4 +17,4 @@ COPY --from=build /build /natttti-pocketbase-backend
 
 EXPOSE 8090
 
-CMD [ "/natttti-pocketbase-backend", "serve", "--http=0.0.0.0:8090", "--dir=/app/data/pb_data", "--publicDir=/app/data/pb_public" ]
+CMD [ "/natttti-pocketbase-backend", "serve", "--http=0.0.0.0:8090", "--encryptionEnv=PB_ENCRYPTION_KEY", "--dir=/app/data/pb_data", "--publicDir=/app/data/pb_public" ]

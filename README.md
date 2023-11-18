@@ -8,7 +8,7 @@
 
 ### Dev
 
-+ To start the application, run `go run main.go serve`
++ To start the application, run `go run main.go serve --encryptionEnv=PB_ENCRYPTION_KEY`
 
 ### Build
 
